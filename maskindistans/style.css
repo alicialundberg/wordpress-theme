@@ -1,0 +1,879 @@
+/*
+Theme Name: MaskinDistans.
+Theme URI: www.maskindistans.com
+Description: A design for company offering machine courses.
+Version: 1.0
+Author: Alicia Lundberg
+*/
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+body, html {
+    height: 100%;
+    background-color: #F9F4F4;
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Ubuntu", Arial, Helvetica, sans-serif;
+}
+
+p {
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+}
+
+/* HEADER */
+.header-image {
+    background-image: url('images/header.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 500px;
+}
+
+.logo {
+    display: inline-block;
+    padding: 2% 2%;
+    width: 25%;
+}
+
+.logo img {
+    width: 85%;
+}
+
+#main-menu {
+    width: 60%;
+    position: absolute; 
+    right: 5%;
+    display: inline-block;
+    text-align: right;
+}
+
+#main-menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+#main-menu li {
+    padding-top: 3%;
+    display: inline-block;
+}
+
+#main-menu li a {
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 22px;
+    font-family: "Ubuntu", Arial, sans-serif;
+}
+
+/* Change the link color to #111 (black) on hover */
+#main-menu li a:hover {
+    color: #94a2ae;
+}
+
+.show-menu {
+    text-decoration: none;
+    color: #fff;
+    background: #ff5700;
+    text-align: center;
+    padding: 10px 0;
+    display: none;
+}
+
+/*Hide checkbox*/
+input[type=checkbox]{
+    display: none;
+}
+
+/*Show menu when invisible checkbox is checked*/
+input[type=checkbox]:checked ~ #main-menu{
+    display: block;
+}
+
+.shopping-cart {
+    display: inline-block;
+    position: absolute;
+    right: 2%;
+    top: 3%;
+}
+
+#shopcart {
+    font-size: 28px;
+    padding: 5% 6%;
+    color: black;
+    text-decoration: none;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: #b8b5b5;
+    bottom: 0;
+}
+
+footer .adress {
+    width: 30%;
+    display: inline-block;
+    padding: 2%;
+    margin-left: 10%;
+    
+}
+
+footer .copyright {
+    width: 80%;
+    font-weight: bold;
+    font-size: 20px;
+    display: inline-block;
+    padding: 2%;
+    margin: 0 10%;
+    text-align: center;
+}
+
+footer .contact {
+    width: 30%;
+    display: inline-block;
+    padding: 2%;
+    margin-left: 20%;
+}
+
+
+/* Buttons */
+.bigButton {
+    background-color: #ff5700; 
+    border: none;
+    border-radius: 20px;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.bigButton:hover {
+    background-color: #ff7832;
+}
+
+.deleteButton {
+    background-color: red;
+    border-radius: 5px;
+    color: white;
+    padding: 15px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family: "Ubuntu", Arial, sans-serif;
+    font-size: 16px;
+    font-weight: bolder;
+}
+
+.backButton {
+    background-color: #807e7e;
+    border-radius: 20px;
+    color: white;
+    padding: 10px 18px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family: "Ubuntu", Arial, sans-serif;
+    font-size: 16px;
+    font-weight: bolder;
+    margin: 1%;
+}
+
+
+/* INDEX-PAGE */
+.info-section {
+    width: 80%;
+    margin: 2% 10%;
+}
+
+.info-section h1 {
+    width: 40%;
+    font-size: 45px;
+    display: inline-block;
+    vertical-align: top;
+    padding-top: 1%;
+    margin-left: 10%;
+}
+
+.info-text {
+    width: 40%;
+    display: inline-block;
+}
+
+.info-text .bigButton {
+    margin: 2% 0 2% 35%;
+}
+
+.course-section {
+    width: 80%;
+    margin: 2% 10%;
+    position: relative;
+    z-index: 1;
+}
+
+.course-section .info-text {
+    background-color: #ff5700;
+    color: black;
+    display: block;
+    border-radius: 6px;
+    position: absolute;
+    float: left;
+    padding: 4%;
+    margin: 7% 0 0 7%;
+    z-index: 3;
+}
+
+.course-section .info-text p {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.course-section .bigButton {
+    background-color: #b8b5b5;
+    color: black;
+}
+
+.course-section .bigButton:hover {
+    background-color: #939090;
+}
+
+.course-section img {
+    position: relative;
+    width: 75%;
+    z-index: 2;
+    right: 7%;
+    margin-left: 32%;
+}
+
+/* INFO-PAGE */
+.info-container {
+    width: 40%;
+    margin: 6% 30%;
+}
+
+.info-container h1 {
+    text-align: center;
+    padding-bottom: 4%;
+    font-size: 50px;
+}
+.info-badges {
+    width: 50%;
+    margin: 10% 25%;
+    padding-left: 5%;
+}
+
+.circle-info {
+    margin: 0 3%;
+    width: 25%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.circle-text {
+    width: 100%;
+}
+
+.circle-text h4 {
+    padding-top: 3%;   
+}
+
+.circle-text p {
+    display: none;
+    padding-top: 4%;
+}
+
+.circle {
+    height: 175px;
+    width: 175px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2%;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 50%; 
+    border: 2px solid black;
+    background: white;
+    font-size: 50px;
+}
+
+.circle:hover {
+    border: 4px solid  #ff5700;
+    cursor: pointer;
+}
+
+.info-contact {
+    width: 40%;
+    margin: 5% 30%;
+    padding: 0 10%;
+}
+
+.info-contact .bigButton {
+    width: 100%;
+    font-size: 25px;
+}
+
+/* CONTACT-PAGE */
+.left-section {
+    width: 45%;
+    display: inline-block;
+}
+
+.adress-container {
+    padding: 10% 0 5% 25%;
+}
+
+.adress-container h3 {
+    padding-top: 3%;
+    font-size: 25px;
+}
+
+.left-section img {
+    width: 50%;
+    margin: 5% 25%;
+}
+
+.right-section {
+    width: 45%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.right-section h1 {
+    text-align: center;
+    padding-top: 7%;
+}
+
+.contact-form {
+    padding: 3% 10% 10% 10%;
+}
+
+.right-section .phone {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-color: #ff5700;
+}
+
+.right-section input[type=text], input[type=email], textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-color: #ff5700;
+}
+
+.right-section input[type="submit"] {
+    background-color: #08A308; 
+    border: none;
+    border-radius: 20px;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    width: 30%;
+    margin: 2% 35%;
+}
+
+.right-section input[type="submit"]:hover {
+    background-color: #83d183;
+}
+
+/* FAQ-PAGE */
+.faq-categories {
+    padding: 15%;
+    margin-left: 15%;
+}
+
+.faq-categories ul {
+    font-size: 25px;
+    list-style-type: none;
+}
+
+.faq-categories ul li {
+    text-decoration: none;
+    padding-bottom: 5%;
+}
+.faq-categories ul li a { 
+    display:block; 
+}
+
+.faq-categories a {
+    text-decoration: none;
+    color: black;
+}
+
+.faq-categories a:hover {
+    color: #ff5700;
+}
+
+/* FAQ CATEGORIES-PAGE */
+.category-section {
+width: 80%;
+margin: 2% 10%;
+z-index: 1;
+}
+
+.category-section h1 {
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+.category-section .question-box {
+    background-color: #ff5700;
+    color: black;
+    padding: 4%;
+    float: left;
+    display: block;
+    z-index: 3;
+    margin: 2% 0 2% 0%;
+    width: 50%;
+    position: absolute;
+}
+
+.question-box p {
+    padding-bottom: 4%;
+}
+
+.category-section img {
+    position: relative;
+    z-index: 2;
+    width: 80%;
+    right: 7%;
+    margin-left: 32%;
+}
+
+/* COURSES-PAGE */
+.course-box {
+    width: 30%;
+    padding: 2% 8%;
+    margin-left: 2%;
+    display: inline-block;
+}
+
+.course-box img {
+    width: 100%;
+}
+
+.course-box .bigButton {
+    margin: 2% 30%;
+}
+
+/* PRODUCTPAGE-PAGE */
+.product-section {
+    width: 80%;
+    margin: 4% 10%;
+    text-align: center;
+}
+
+.image-box {
+    width: 50%;
+    display: inline-block;
+}
+
+.image-box img {
+    width: 90%;
+    padding: 10%;
+}
+
+.info-box {
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+    padding: 5%;
+}
+
+.info-box h1 {
+    text-align: center;
+    padding-bottom: 4%;
+}
+
+.info-box p {
+    padding-bottom: 10%;
+}
+
+.info-box .price {
+    text-align: right;
+}
+
+.price h2 {
+    font-size: 45px;
+}
+
+.product-section .bigButton {
+    margin: 2%;
+}
+
+/* CART-PAGE */
+.cartTable {
+    width: 80%;
+    margin: 2% 10%;
+}
+ input[type=number] {
+    width: 20%;  
+    padding: 1%;
+ }
+
+.table-img {
+    width: 30%;
+    padding: 2%;
+}
+
+.table-img img {
+    width: 50%;
+}
+
+.cart-id {
+    display: none;
+}
+
+#pay-method {
+    margin-left: 10%;
+}
+
+#pay-method h2 {
+    padding-bottom: 1%;
+}
+
+/* The container */
+.radio-buttons {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 18px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.radio-buttons input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.radio-buttons:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+/* When the radio button is checked, add a orange background */
+.radio-buttons input:checked ~ .checkmark {
+    background-color: #ff5700;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.radio-buttons input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.radio-buttons .checkmark:after {
+    top: 9px;
+    left: 9px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: white;
+}
+
+.checkout-section {
+    margin: 3%;
+    text-align: center;
+}
+
+.checkout-section h2 {
+    font-size: 30px;
+}
+
+.checkout-section .bigButton {
+    margin-top: 2%;
+}
+
+/* BOOKING-PAGE */
+.main {
+    width: 50%;
+    margin: 5% 25%;
+}
+
+.main .bigButton {
+    width: 35%;
+    margin: 3% 30% ;
+}
+
+/* CHECKOUT-PAGE */
+.receipt {
+    width: 40%;
+    border: 2px solid black;
+    padding: 3%;
+    margin: 15% 5% 5% 22%;
+}
+
+.receipt h2 {
+    text-align: center;
+    padding-bottom: 3%;
+}
+
+.receipt ul li {
+    list-style-type: none;
+}
+
+.receipt p {
+    padding-bottom: 3%;
+}
+
+.receipt p:last-child {
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 4%;
+}
+
+#postnr, #city, #month, #ccv  {
+    width: 47%;
+    display: inline-block;
+}
+
+#postnr, #month {
+    margin-right: 5%;
+}
+
+.checkout-form {
+    margin-top: 10%;
+}
+.checkout-form .bigButton {
+    background-color: #08A308;
+    margin: 5% 25%;
+    width: 50%;
+}
+
+
+/* MEDIA QUERIES */
+
+/* Mobile view */
+@media screen and (max-width: 500px) {
+    .header-image {height: 300px; background-position: left;}
+    .show-menu {display: block; width: 10%; float: right; background: none; text-align: right; padding: 3%;}
+    #main-menu {display: none; width: 100%; position: relative; right: 0;}
+    #main-menu ul {width: 100%; text-align: center;}
+    #main-menu li {float: none;display: block; background-color: #ffbb99; padding-top: 0; padding: 2%;}
+    #main-menu li:hover {background-color: #ff9a66}
+    #main-menu li a:hover {color: white;}
+    .logo {width: 50%; margin: 1%;}
+    .shopping-cart {right: 10%; top: 3%; position: absolute; }
+    #shopcart {padding: 3%; font-size: 20px; color: white;}
+    footer .contact {width: 70%; font-size: 14px; margin-left: 2%;}
+    footer .adress {width: 60%; margin-left: 2%; font-size: 14px;}
+    footer .copyright {width: 50%; margin: 2% 25%; font-size: 14px;}
+    .info-section {width: 100%; margin: 2% 0;}
+    .info-section h1 {width: 90%; margin: 0 5%; font-size: 28px; text-align: center;}
+    .info-section .info-text {width: 80%; margin: 1% 10%; font-size: 15px;}
+    .info-section .info-text .bigButton {width: 50%; margin: 2% 25%;}
+    .course-section {width: 100%; margin: 0; background-image: url("images/excavator1.jpg"); min-height: 500px; background-attachment: fixed; background-position: center; background-repeat: no-repeat; background-size: cover;}
+    .course-section img {display: none;}
+    .course-section .info-text {width: 70%; margin: 30% 15% 10% 15%;}
+    .course-section .info-text p {font-size: 15px; font-weight: bold;}
+    .course-section .info-text .bigButton {width: 70%; margin: 5% 15% 2% 15%; padding: 10px 25px;}
+    .course-box  {width: 45%; padding: 2% 4%; margin-top: 3%;}
+    .course-box .bigButton {margin: 2% 20%; padding: 8px 25px;}
+    .left-section {display: none;}
+    .right-section {width: 100%; margin: 0; background-image: url("images/excavator1.jpg"); min-height: 500px; background-attachment: fixed; background-position: center; background-repeat: no-repeat; background-size: cover;}
+    .faq-categories {background-color: #ff5700; width: 70%; margin: 15% 15% 10% 15%;}
+    .faq-categories ul li {font-size: 20px; padding-bottom: 8%;}
+    .category-section {width: 100%; height: 900px; overflow: hidden; margin: 0; background-image: url("images/forestexcavator.jpg"); min-height: 500px; background-attachment: fixed; background-position: center; background-repeat: no-repeat; background-size: cover;}
+    .category-section img {display: none;}
+    .category-section h1 {padding-top: 15%;}
+    .category-section .question-box {width: 70%; height: auto; margin: 5% 15% 10% 15%;}
+    .faq-container .backButton {float: left; display: block; position: absolute;}
+    .info-container {width: 100%; margin: 0;}  
+    .info-container h1 {font-size: 35px; padding-top: 5%;} 
+    .info-container p {width: 70%; margin: 0 15%;}
+    .info-badges {width: 80%; margin: 0 10%; padding: 0 13%;}
+    .circle-info {width: 90%; margin: 5% 5%;}
+    .circle {width: 150px; height: 150px; margin: 0 11%;}
+    .circle-text h4 {text-align: center;}
+    .circle-text p {width: 150%; padding-right: 40%;}
+    .info-contact {width: 100%; margin: 5% 0;}
+    .contact-container .left-section {display: block; width: 80%; margin: 5%;}
+    .adress-container {padding: 0;}
+    .contact-container .left-section img {display: none;}
+    table {border: 0;}
+    table caption {font-size: 1.3em;}
+    td { padding: 5%; }
+    table thead {border: none; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px;}
+    table tr {border-bottom: 3px solid #ddd; display: block; margin-bottom: .625em;}
+    table td {border-bottom: 1px solid #ddd; display: block; font-size: .8em; text-align: right;}
+    table td::before { float: left; font-weight: bold;}
+    table td:last-child {border-bottom: 0;}
+    .table-img {width: auto; padding: 5%;}
+	td:nth-of-type(2):before { content: "Antal"; }
+	td:nth-of-type(3):before { content: "Kurs"; }
+    td:nth-of-type(4):before { content: "Pris"; }
+    td .deleteButton {width: 50%; margin: 0 25%; color: transparent;}
+    td .deleteButton:before {content: "Radera";  color: white;}
+    .checkout-section {padding: 7% 0;}
+    .checkout-container .left-section {display: block; width: 80%; margin: 2% 10%;}
+    .receipt {width: 80%; margin: 10% 5%;}
+    .checkout-form {width: 80%; margin: 5% 10%;}
+    #city, #postnr, #month, #ccv {width: 80%; margin: 2% 10%;}
+    .right-section input[type="submit"] {width: 60%; margin: 2% 20%;}
+    .image-box {width: 100%;}
+    .image-box img {width: 100%; padding: 0%;}
+    .info-box {width: 100%;}
+    .price p {font-size: 14px;}
+    input[type=submit] {width: 60%; margin: 0 20%;}
+    .info-section .info-text .bigButton {width: 60%; margin: 2% 20%;}
+    .right-section label {width: 80%; margin: 2% 0 2% 10%;}
+    .right-section input[type=text], input[type=email], textarea {width: 80%; margin: 2% 10%;}
+    .right-section .phone {width: 80%; margin: 2% 10%;}
+    .main .bigButton {width: 70%; margin: 5% 15% 2% 15%; padding: 10px 25px;}
+}
+
+@media screen and (min-width: 400px) and (max-width: 500px) {
+.circle {width: 150px; height: 150px; margin: 0 17%;}
+.shopping-cart {right: 10%; top: 3%; position: absolute; }
+}
+
+/* Tablet view */
+@media screen and (min-width: 500px) and (max-width: 800px) {
+    .header-image {height: 300px;}
+    .show-menu {display: block; width: 10%; float: right; background: none; text-align: right; padding: 3%;}
+    #main-menu {display: none; width: 100%; position: relative; right: 0;}
+    #main-menu ul {width: 100%; text-align: center;}
+    #main-menu li {float: none;display: block; background-color: #ffbb99; padding-top: 0; padding: 2%;}
+    #main-menu li:hover {background-color: #ff9a66}
+    #main-menu li a:hover {color: white;}
+    .logo {width: 50%; margin: 1%;}
+    .shopping-cart {right: 8%; top: 6%; position: absolute; }
+    #shopcart {padding: 3%; font-size: 20px; color: white;}
+    #shopcart {padding: 3% 1% 3% 3%; font-size: 20px; color: white;}
+    footer .contact {width: 70%; font-size: 14px; margin-left: 2%;}
+    footer .adress {width: 60%; margin-left: 2%; font-size: 14px;}
+    footer .copyright {width: 40%; margin: 2% 30%; font-size: 20px;}
+    .info-section {width: 100%; margin: 2% 0;}
+    .info-section h1 {width: 80%; margin: 0 10%; text-align: center;}
+    .info-section .info-text {width: 80%; margin: 1% 10%;}
+    .info-section .info-text .bigButton {width: 50%; margin: 2% 25%;}
+    .course-section {width: 100%; margin: 0; background-image: url("images/excavator1.jpg"); min-height: 500px; background-attachment: fixed; background-position: center; background-repeat: no-repeat; background-size: cover;}
+    .course-section img {display: none;}
+    .course-section .info-text {width: 70%; margin: 15% 15% 10% 15%;}
+    .course-section .info-text p {font-size: 15px; font-weight: bold;}
+    .course-section .info-text .bigButton {width: 70%; margin: 5% 15% 2% 15%; padding: 10px 25px;}
+    .course-box  {width: 45%; padding: 2% 4%; margin-top: 3%;}
+    .course-box .bigButton {margin: 2% 28%; padding: 10px 32px;}
+    .image-section {padding-top: 10%;}
+    .info-container {width: 80%; margin: 6% 10%;}
+    .info-badges {width: 90%; margin: 10% 5%;}
+    .circle {height: 140px; width: 140px;}
+    .info-contact {width: 60%; margin: 5% 20%;}
+    .right-section {width: 100%; margin: 0; background-image: url("images/forestexcavator.jpg"); min-height: 500px; background-attachment: fixed; background-position: center; background-repeat: no-repeat; background-size: cover;}
+    .contact-container .left-section {display: block; width: 80%; margin: 5%;}
+    .adress-container {padding: 0;}
+    .contact-container .left-section img {display: none;}
+    .left-section {display: none;}
+    .category-section {width: 100%; height: 900px; overflow: hidden; margin: 0; background-image: url("images/excavator1.jpg"); min-height: 500px; background-attachment: fixed; background-position: center; background-repeat: no-repeat; background-size: cover;}
+    .category-section img {display: none;}
+    .category-section h1 {padding-top: 15%;}
+    .category-section .question-box {width: 70%; height: auto; margin: 5% 15% 10% 15%;}
+    .faq-categories {background-color: #ff5700; width: 70%; margin: 15% 15% 10% 15%;}
+    .faq-categories ul li {font-size: 22px; padding-bottom: 8%;}
+    .faq-container .backButton {float: left; display: block; position: absolute;}
+    table {border: 0;}
+    table caption {font-size: 1.3em;}
+    td { padding: 5%; }
+    table thead {border: none; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px;}
+    table tr {border-bottom: 3px solid #ddd; display: block; margin-bottom: .625em;}
+    table td {border-bottom: 1px solid #ddd; display: block; font-size: .8em; text-align: right;}
+    table td::before { float: left; font-weight: bold;}
+    table td:last-child {border-bottom: 0;}
+    .table-img {width: auto; padding: 5%;}
+	td:nth-of-type(2):before { content: "Antal"; }
+	td:nth-of-type(3):before { content: "Kurs"; }
+    td:nth-of-type(4):before { content: "Pris"; }
+    td .deleteButton {width: 50%; margin: 0 25%; color: transparent;}
+    td .deleteButton:before {content: "Radera";  color: white;}
+    .checkout-section {padding: 7% 0;}
+    .checkout-container .left-section {display: block; width: 70%; margin: 2% 15%;}
+    .checkout-container .right-section { width: 100%;}
+    .receipt {width: 80%; margin: 10%;}
+    .checkout-form {width: 80%; margin: 5% 10%;}
+    #city, #postnr, #month, #ccv {width: 80%; margin: 2% 10%;}
+    .right-section input[type="submit"] {width: 60%; margin: 2% 20%;}
+    .image-box {width: 100%;}
+    .image-box img {width: 100%; padding: 0%;}
+    .info-box {width: 100%;}
+    .price p {font-size: 14px;}
+    .right-section label {width: 80%; margin: 2% 0 2% 10%;}
+    .right-section input[type=text], input[type=email], textarea {width: 80%; margin: 2% 10%;}
+    .right-section .phone {width: 80%; margin: 2% 10%;}
+}
+
+/*  Small desktop-view */
+@media screen and (min-width: 800px) and (max-width: 1000px) {
+    .logo {width: 40%;}
+    #main-menu {width: 80%; margin-left: 0;}
+    #main-menu ul li a {font-size: 20px; padding: 10px 12px;}
+    .logo {width: 30%;}
+    footer .copyright {width: 80%;}
+    footer .contact {margin-left: 10%;}
+    footer .adress {margin-left: 25%;}
+    .info-section h1 {font-size: 30px;}
+    .course-section .info-text {width: 50%;}
+    .course-section .info-text p {font-size: 16px;}
+    .course-container .info-text p {font-size: 18px;}
+    .info-container {width: 80%; margin: 6% 10%;}
+    .info-badges {width: 80%; margin: 10%; padding-left: 0;}
+    .info-contact {width: 60%; margin: 5% 20%; }
+    .course-box {width: 40%; padding: 2% 5%; margin-left: 5%;}
+}
+
+/* Medium desktop-view */
+@media screen and (min-width: 1000px) and (max-width: 1300px) {
+    #main-menu {width: 90%; margin-left: 5%;}
+    #main-menu ul {margin-left: 8%;}
+    .shopping-cart {top: 5%;}
+    .info-section h1 {font-size: 37px;}
+    .course-section .info-text {width: 50%;}
+    .course-section .info-text p {font-size: 18px;}
+    .course-container .info-text p {font-size: 20px;}
+    .info-badges {padding-left: 0; width: 60%; margin: 10% 20%;}
+}
